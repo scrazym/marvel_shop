@@ -12,7 +12,7 @@ The app is developed using React.js and SCSS.
 
 ## 💻 Live Demo:
 
-You can see live demo on [Github-pages](https://weather-forecast-4bif.vercel.app/)
+You can see live demo on [Vercel](https://weather-forecast-4bif.vercel.app/)
 
 <br/>
 
