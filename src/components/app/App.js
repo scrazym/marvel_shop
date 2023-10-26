@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import AppHeader from "../appHeader/AppHeader";
 import AppBanner from "../appBanner/AppBanner";
@@ -18,10 +19,11 @@ const App = () => {
   };
 
   return (
-    <div className="app">
-      <AppHeader />
-      <main>
-        {/* <RandomChar />
+    <Router>
+      <div className="app">
+        <AppHeader />
+        <main>
+          {/* <RandomChar />
         <div className="char__content">
           <CharList onCharSelected={onCharSelected} />
           <ErrorBoundary>
@@ -29,11 +31,12 @@ const App = () => {
           </ErrorBoundary>
         </div>
         <img className="bg-decoration" src={decoration} alt="vision" /> */}
-        <AppBanner />
+          <AppBanner />
 
-        <ComicsList />
-      </main>
-    </div>
+          <ComicsList />
+        </main>
+      </div>
+    </Router>
   );
 };
 
