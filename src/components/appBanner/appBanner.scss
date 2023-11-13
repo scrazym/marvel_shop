@@ -1,20 +1,38 @@
-@import '../../style/variables.scss';
-
+@import "../../style/variables.scss";
+.parrent {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 2px solid #000;
+}
+.block {
+  position: relative;
+  top: 200px;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  margin-bottom: 15px;
+}
+.block2 {
+  background-color: green;
+  margin-top: 5px;
+}
 .app {
-    &__banner {
-        width: 100%;
-        background-color: $dark;
-        height: 100px;
-        padding: 0 25px 0 45px;
-        display: grid;
-        grid-template-columns: 152px auto 133px;
-        &-text {
-            font-weight: bold;
-            font-size: 24px;
-            line-height: 32px;
-            color: #FFFFFF;
-            padding-left: 83px;
-            padding-top: 18px;
-        }
+  &__banner {
+    width: 100%;
+    background-color: $dark;
+    height: 100px;
+    padding: 0 25px 0 45px;
+    display: grid;
+    grid-template-columns: 152px auto 133px;
+    &-text {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 32px;
+      color: #ffffff;
+      padding-left: 83px;
+      padding-top: 18px;
     }
+  }
 }
